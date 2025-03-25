@@ -2,6 +2,8 @@
 
 A basic DLL template, works for x64 mainly, but should on x32/x86. Inject into process to run it.
 
+To build call ``gcc -c main.cp``, then ``gcc -shared -o mydll.dll main.o -lstdc++``
+
 ``` cpp
 #include <Windows.h>
 #include <iostream>
