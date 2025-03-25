@@ -7,6 +7,7 @@ Use MSYS and add both Bin folders to the PATH environment variable. ``C:\msys64\
 To install MSYS 32 bit version, call ``pacman -S mingw-w64-i686-gcc`` in the msys terminal.
 
 **64 Bit:** Call ``gcc -c main.cpp`` then ``gcc -shared -o mydll.dll main.o -lstdc++ ``
+
 **32 Bit:** Call ``i686-w64-mingw32-gcc -c main.cpp -o main.o`` then ``i686-w64-mingw32-gcc -shared -o mydll.dll main.o -lstdc++``
 
 ``` cpp
