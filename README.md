@@ -2,7 +2,12 @@
 
 A basic DLL template, works for x64 mainly, but should on x32/x86. Inject into process to run it.
 
-To build call ``gcc -c main.cp``, then ``gcc -shared -o mydll.dll main.o -lstdc++``
+
+Use MSYS and add both Bin folders to the PATH environment variable. ``C:\msys64\mingw32\bin`` and ``C:\msys64\ucrt64\bin``
+To install MSYS 32 bit version, call ``pacman -S mingw-w64-i686-gcc`` in the msys terminal.
+
+**64 Bit:** Call ``gcc -c main.cpp`` then ``gcc -shared -o mydll.dll main.o -lstdc++ ``
+**32 Bit:** Call ``i686-w64-mingw32-gcc -c main.cpp -o main.o`` then ``i686-w64-mingw32-gcc -shared -o mydll.dll main.o -lstdc++``
 
 ``` cpp
 #include <Windows.h>
